@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expense.css"> 
+</head>
+<body>
+    <h1>Expense tracker</h1>
+    <form>
+        <label for="where">Where did you spend the money?</label>
+        <input type="text" name="where" id="where">
+        <label for="amount">How much did you spend?</label>
+        <input type="number" name="amount" id="amount">
+        <label for="type">What type of spending was this? </label>
+        <select name="type" id="type">
+            <option selected >Select an option...</option>
+            <option value="investment">Investment</option>
+            <option value="savings">Savings</option>
+            <option value="leisure">Leisure</option>
+        </select>
+        <button type="button" onclick="add()">Add expense</button>
+    </form>
+
+    <table>
+        <tr>
+            <th>place</th>
+            <th>amount</th>
+            <th>type</th>
+            <th>date</th>
+        </tr>
+    </table>
+
+    <h4>Total money spent: $<span id="sum">0</span></h4>
+
+    <h4>Expenditure on Leisure: $<span id="l-total">0</span></h4>
+    <h4>Expenditure on Savings: $<span id="s-total">0</span></h4>
+    <h4>Expenditure on Investment: $<span id="i-total">0</span></h4>
+
+    <h4>Percentage of money spent on Leisure: <span id="l-perc">0</span>%</h4>
+    <h4>Percentage of money spent on Savings: <span id="s-perc">0</span>%</h4>
+    <h4>Percentage of money spent on Investment: <span id="i-perc">0</span>%</h4>
+
+    <script src="expense.js"></script>
+</body>
+</html>

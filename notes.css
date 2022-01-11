@@ -1,0 +1,25 @@
+p {
+  border: 1px solid rgb(143, 143, 143);
+  border-radius: 7px;
+  background: rgb(247, 246, 246);
+  overflow: hidden;
+  /* white-space: pre; */
+  white-space: pre;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  width: 30%;
+  padding-left: 7px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.text-truncate {
+  width: 90vw;
+  text-align: justify;
+  overflow: auto;
+  text-overflow: initial;
+}
